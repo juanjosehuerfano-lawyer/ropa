@@ -1,6 +1,6 @@
 # Vorágine Ropa · Vitrina 3D de prendas
 
-Tienda web de **Vorágine Ropa**, con el mismo estilo de la vitrina de perfumes de Vorágine by Alttura. Tiene 36 prendas originales (buzos, hoodies, chaquetas, suéteres y camisetas) en 111 combinaciones de color. No muestra precios: todo se cotiza por WhatsApp.
+Tienda web de **Vorágine Ropa**, con el mismo estilo de la vitrina de perfumes de Vorágine by Alttura. Tiene 36 prendas (buzos, hoodies, chaquetas, suéteres y camisetas) en 111 combinaciones de color. No muestra precios: todo se cotiza por WhatsApp.
 
 **Dirección prevista:** https://ropa.voraginebyalttura.com
 
@@ -30,7 +30,7 @@ Tienda web de **Vorágine Ropa**, con el mismo estilo de la vitrina de perfumes 
 ## Fotos
 
 - **Fichas del proveedor con prendas sobre fondo blanco** (sudaderas con referencia numérica): cada color se recortó por separado y se le quitó el fondo para que la prenda flote en la vitrina 3D.
-- **Fotos con modelo:** se usan tal como llegaron, sin cambiar la prenda ni a la persona. Solo se recortaron los precios y los textos de la ficha.
+- **Fotos con modelo:** se quitó a la persona y quedó solo la prenda (scripts en `herramientas/sin-personas/`). Siete fotos en las que el pelo cubre la prenda o el encuadre es muy cerrado se dejaron como foto completa: esos archivos no terminan en `-recorte.webp`.
 - **Calidad:** todas las fotos se ampliaron con un modelo de superresolución conservador (FSRCNN) y un enfoque suave. No se cambiaron colores, formas ni detalles.
 
 ## Cómo hacer cambios
@@ -50,4 +50,4 @@ El archivo `CNAME` ya trae `ropa.voraginebyalttura.com`. Para publicarlo con Git
 
 ## Aviso legal
 
-© 2026 Vorágine by Alttura. Todos los derechos reservados. Las marcas y nombres de las prendas pertenecen a sus respectivos titulares y se mencionan solo para identificar productos originales importados. Con cada compra se entrega el soporte de origen.
+© 2026 Vorágine by Alttura. Todos los derechos reservados. Las marcas y nombres de las prendas pertenecen a sus respectivos titulares y se mencionan solo para identificar los productos.
