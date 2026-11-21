@@ -34,8 +34,10 @@
     colores.forEach(c => { if (!c.fotos.length) { c.fotos = respaldo; c.sinFoto = true; } });
     return Object.assign({}, p, { colores, busca: sinTildes([p.nombre, p.marca, p.tipo, p.ref, ...colores.map(c => c.nombre)].join(' ')) });
   }).filter(p => p.colores.length && p.colores[0].fotos.length);
+  // Una imagen es recorte (sin fondo) si la prenda entera lo es o si el archivo termina en -recorte.webp.
+  const esRecorte = (p, url) => !!p.recorte || /-recorte\.webp$/.test(url || '');
   // Primero las prendas recortadas (lucen mejor en 3D), luego las fotos con modelo.
-  CAT.sort((a, b) => (b.recorte ? 1 : 0) - (a.recorte ? 1 : 0));
+  CAT.sort((a, b) => (esRecorte(b, b.colores[0].fotos[0]) ? 1 : 0) - (esRecorte(a, a.colores[0].fotos[0]) ? 1 : 0));
 
   /* ---------- Estado ---------- */
   const selColor = {};   // ref -> índice de color
@@ -190,9 +192,9 @@
     }
     function poner(pz, p) {
       const url = imagenDe(p); if (pz.url === url) return; pz.url = url;
-      textura(url, !p.recorte).then(t => {
+      textura(url, !esRecorte(p, url)).then(t => {
         if (pz.url !== url) return;
-        pz.m.material.map = t; pz.m.material.needsUpdate = true; pz.aspecto = t.userData.aspecto; pz.recorte = p.recorte;
+        pz.m.material.map = t; pz.m.material.needsUpdate = true; pz.aspecto = t.userData.aspecto; pz.recorte = esRecorte(p, url);
       }).catch(() => {});
     }
     function limpiar() { piezas.forEach(pz => { scene.remove(pz.g); pz.m.material.dispose(); pz.sombra.material.dispose(); }); piezas.clear(); }
@@ -389,7 +391,7 @@
     const foto = $('#ficha-foto'), url = c.fotos[fi];
     if (foto.dataset.url !== url) {
       foto.dataset.url = url; foto.classList.remove('lista');
-      const im = new Image(); im.alt = `${p.nombre} color ${c.nombre}`; im.className = p.recorte ? '' : 'foto-real';
+      const im = new Image(); im.alt = `${p.nombre} color ${c.nombre}`; im.className = esRecorte(p, url) ? '' : 'foto-real';
       im.onload = () => { if (foto.dataset.url === url) { foto.replaceChildren(im); requestAnimationFrame(() => foto.classList.add('lista')); } };
       im.src = url;
     }
@@ -412,10 +414,8 @@
         `<button type="button" class="talla" role="radio" aria-checked="${t === tallaSel}" data-talla="${esc(t)}">${esc(t)}</button>`).join('')}</div>
         <p class="ficha-nota">Tallas disponibles hoy en color ${esc(c.nombre.toLowerCase())}.</p>`
         : '<p class="ficha-nota">Consulta las tallas disponibles por WhatsApp.</p>'}
-      <div class="garantia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.2 8 9 4.6-.8 8-4.5 8-9V6l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
-        <span><strong>Prenda original</strong>Con tu compra entregamos el soporte de origen.</span></div>
       ${similares.length ? `<p class="seccion-titulo">También te puede gustar</p><div class="similares-lista">${similares.map(o =>
-        `<button type="button" class="similar" data-ref="${esc(o.ref)}"><img src="${esc(imagenDe(o))}" alt="" class="${o.recorte ? '' : 'foto-real'}" loading="lazy"><b>${esc(o.nombre)}</b><small>${esc(o.marca)}</small></button>`).join('')}</div>` : ''}`;
+        `<button type="button" class="similar" data-ref="${esc(o.ref)}"><img src="${esc(imagenDe(o))}" alt="" class="${esRecorte(o, imagenDe(o)) ? '' : 'foto-real'}" loading="lazy"><b>${esc(o.nombre)}</b><small>${esc(o.marca)}</small></button>`).join('')}</div>` : ''}`;
     $('#ficha-pos').textContent = `${actual + 1} / ${lista.length}`;
   }
   ficha.addEventListener('click', e => {
@@ -464,7 +464,7 @@
     $('#pedido').classList.toggle('vacio-pedido', !pedido.length);
     $('#pedido-lista').innerHTML = pedido.map((x, i) => {
       const p = CAT.find(o => o.ref === x.ref); const ci = Math.max(0, p.colores.findIndex(c => c.nombre === x.color)); const c = p.colores[ci];
-      return `<li><span class="p-foto"><img src="${esc(c.fotos[0])}" alt="" class="${p.recorte ? '' : 'foto-real'}"></span>
+      return `<li><span class="p-foto"><img src="${esc(c.fotos[0])}" alt="" class="${esRecorte(p, c.fotos[0]) ? '' : 'foto-real'}"></span>
         <span><b>${esc(p.nombre)}</b><small><span class="punto" style="--c:${c.hex}"></span>${esc(x.color)}${x.talla ? ' · Talla ' + esc(x.talla) : ''}</small></span>
         <button type="button" class="btn-icono p-quitar" data-quitar="${i}" aria-label="Quitar ${esc(p.nombre)} ${esc(x.color)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></li>`;
     }).join('');
@@ -570,7 +570,7 @@
       return `<img src="${esc(u)}" alt="" style="--x:${x * f}px;--y:${y}px;--r:${r}deg;--s:${s};--i:${k};z-index:${5 - k}" loading="lazy">`; }).join('');
   }
   function fotosDe(prendas, n) {
-    const rec = prendas.filter(p => p.recorte);
+    const rec = prendas.filter(p => esRecorte(p, imagenDe(p)));
     return (rec.length ? rec : prendas).slice(0, n).map(p => imagenDe(p));
   }
   function pintarPortada() {
@@ -672,7 +672,7 @@
   function pintarRejilla() {
     if (escena) return;
     $('#rejilla').innerHTML = lista.map((p, i) => `<article class="tarjeta">
-      <img src="${esc(imagenDe(p))}" alt="${esc(p.nombre)}" class="${p.recorte ? '' : 'foto-real'}" loading="lazy">
+      <img src="${esc(imagenDe(p))}" alt="${esc(p.nombre)}" class="${esRecorte(p, imagenDe(p)) ? '' : 'foto-real'}" loading="lazy">
       <h3>${esc(p.nombre)}</h3><p>${esc(p.marca)} · ${p.colores.length} ${p.colores.length === 1 ? 'color' : 'colores'}</p>
       <button type="button" class="btn btn-sec" data-ver="${i}">Ver colores y tallas</button></article>`).join('');
   }
@@ -683,7 +683,7 @@
     // Un enlace con # malformado no debe romper la página.
     try { return decodeURIComponent(location.hash.replace(/^#/, '')); } catch (e) { return ''; }
   }
-  document.title = `${T.nombre} · Buzos, hoodies y chaquetas originales`;
+  document.title = `${T.nombre} · Buzos, hoodies y chaquetas`;
   $$('#logo-linea, .portada-linea').forEach(el => { el.textContent = T.linea || 'Ropa'; });
   escena = crearEscena();
   if (!escena) { body.classList.add('sin-3d'); $('#rejilla').hidden = false; pintarRejilla(); }

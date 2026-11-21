@@ -13,7 +13,7 @@ window.CATALOGO = [
     "hex": "#a9c4e4",
     "tallas": "Consultar",
     "fotos": [
-     "img/prendas/vr-01-azul-cielo-1.webp"
+     "img/prendas/vr-01-azul-cielo-1-recorte.webp"
     ]
    },
    {
@@ -21,7 +21,7 @@ window.CATALOGO = [
     "hex": "#6e1f2f",
     "tallas": "Consultar",
     "fotos": [
-     "img/prendas/vr-01-vinotinto-2.webp"
+     "img/prendas/vr-01-vinotinto-2-recorte.webp"
     ]
    },
    {
@@ -29,7 +29,7 @@ window.CATALOGO = [
     "hex": "#f2c230",
     "tallas": "Consultar",
     "fotos": [
-     "img/prendas/vr-01-amarillo-3.webp"
+     "img/prendas/vr-01-amarillo-3-recorte.webp"
     ]
    }
   ],
@@ -48,8 +48,7 @@ window.CATALOGO = [
     "hex": "#d0202a",
     "tallas": "Consultar",
     "fotos": [
-     "img/prendas/vr-02-rojo-1.webp",
-     "img/prendas/vr-02-rojo-2.webp"
+     "img/prendas/vr-02-rojo-2-recorte.webp"
     ]
    },
    {
@@ -57,8 +56,8 @@ window.CATALOGO = [
     "hex": "#1d2340",
     "tallas": "Consultar",
     "fotos": [
-     "img/prendas/vr-02-azul-noche-3.webp",
-     "img/prendas/vr-02-azul-noche-4.webp"
+     "img/prendas/vr-02-azul-noche-3-recorte.webp",
+     "img/prendas/vr-02-azul-noche-4-recorte.webp"
     ]
    }
   ],
@@ -104,7 +103,7 @@ window.CATALOGO = [
     "hex": "#6b6a3a",
     "tallas": "XL",
     "fotos": [
-     "img/prendas/ck-chq-verde-1.webp"
+     "img/prendas/ck-chq-verde-1-recorte.webp"
     ]
    },
    {
@@ -112,7 +111,7 @@ window.CATALOGO = [
     "hex": "#141414",
     "tallas": "XXL",
     "fotos": [
-     "img/prendas/ck-chq-negro-2.webp"
+     "img/prendas/ck-chq-negro-2-recorte.webp"
     ]
    },
    {
@@ -120,7 +119,7 @@ window.CATALOGO = [
     "hex": "#d0202a",
     "tallas": "M · L",
     "fotos": [
-     "img/prendas/ck-chq-rojo-3.webp"
+     "img/prendas/ck-chq-rojo-3-recorte.webp"
     ]
    }
   ],
@@ -139,7 +138,7 @@ window.CATALOGO = [
     "hex": "#6b6a3a",
     "tallas": "XL · XXL",
     "fotos": [
-     "img/prendas/boss-urban-verde-1.webp"
+     "img/prendas/boss-urban-verde-1-recorte.webp"
     ]
    },
    {
@@ -147,7 +146,7 @@ window.CATALOGO = [
     "hex": "#141414",
     "tallas": "XL · XXL",
     "fotos": [
-     "img/prendas/boss-urban-negro-2.webp"
+     "img/prendas/boss-urban-negro-2-recorte.webp"
     ]
    },
    {
@@ -155,7 +154,7 @@ window.CATALOGO = [
     "hex": "#f4f2ee",
     "tallas": "L · XL · XXL",
     "fotos": [
-     "img/prendas/boss-urban-blanco-3.webp"
+     "img/prendas/boss-urban-blanco-3-recorte.webp"
     ]
    }
   ],
@@ -217,8 +216,8 @@ window.CATALOGO = [
     "hex": "#8c8d90",
     "tallas": "L",
     "fotos": [
-     "img/prendas/boss-cortavientos-gris-1.webp",
-     "img/prendas/boss-cortavientos-gris-2.webp"
+     "img/prendas/boss-cortavientos-gris-1-recorte.webp",
+     "img/prendas/boss-cortavientos-gris-2-recorte.webp"
     ]
    }
   ],
@@ -237,7 +236,7 @@ window.CATALOGO = [
     "hex": "#141414",
     "tallas": "XL",
     "fotos": [
-     "img/prendas/burberry-negro-1.webp"
+     "img/prendas/burberry-negro-1-recorte.webp"
     ]
    },
    {
@@ -245,7 +244,7 @@ window.CATALOGO = [
     "hex": "#1f3a8a",
     "tallas": "XXL",
     "fotos": [
-     "img/prendas/burberry-azul-2.webp"
+     "img/prendas/burberry-azul-2-recorte.webp"
     ]
    }
   ],
@@ -264,7 +263,7 @@ window.CATALOGO = [
     "hex": "#1f3a8a",
     "tallas": "XXL",
     "fotos": [
-     "img/prendas/tommy-chq-azul-1.webp"
+     "img/prendas/tommy-chq-azul-1-recorte.webp"
     ]
    }
   ],
@@ -311,14 +310,14 @@ window.CATALOGO = [
   "marca": "Hugo Boss",
   "tipo": "Chaqueta",
   "publico": "Caballero",
-  "descripcion": "Estilo moderno y original.",
+  "descripcion": "Estilo moderno y elegante.",
   "colores": [
    {
     "nombre": "Negro",
     "hex": "#141414",
     "tallas": "M · XXL",
     "fotos": [
-     "img/prendas/boss-class-negro-1.webp"
+     "img/prendas/boss-class-negro-1-recorte.webp"
     ]
    }
   ],
@@ -423,7 +422,7 @@ window.CATALOGO = [
     "hex": "#f4f2ee",
     "tallas": "XXL",
     "fotos": [
-     "img/prendas/tommy-firma-blanco-1.webp"
+     "img/prendas/tommy-firma-blanco-1-recorte.webp"
     ]
    }
   ],
@@ -442,7 +441,7 @@ window.CATALOGO = [
     "hex": "#8c8d90",
     "tallas": "XL · 3XL",
     "fotos": [
-     "img/prendas/tommy-hilo-gris-2.webp"
+     "img/prendas/tommy-hilo-gris-2-recorte.webp"
     ]
    },
    {
@@ -450,7 +449,7 @@ window.CATALOGO = [
     "hex": "#d0202a",
     "tallas": "L · XL",
     "fotos": [
-     "img/prendas/tommy-hilo-rojo-1.webp"
+     "img/prendas/tommy-hilo-rojo-1-recorte.webp"
     ]
    }
   ],
@@ -469,7 +468,7 @@ window.CATALOGO = [
     "hex": "#1f3a8a",
     "tallas": "M · L · XL · XXL",
     "fotos": [
-     "img/prendas/tommy-mc-azul-3.webp"
+     "img/prendas/tommy-mc-azul-3-recorte.webp"
     ]
    },
    {
@@ -477,7 +476,7 @@ window.CATALOGO = [
     "hex": "#141414",
     "tallas": "M · L · XL · XXL",
     "fotos": [
-     "img/prendas/tommy-mc-negro-2.webp"
+     "img/prendas/tommy-mc-negro-2-recorte.webp"
     ]
    },
    {
@@ -485,7 +484,7 @@ window.CATALOGO = [
     "hex": "#f4f2ee",
     "tallas": "M · XL",
     "fotos": [
-     "img/prendas/tommy-mc-blanco-1.webp"
+     "img/prendas/tommy-mc-blanco-1-recorte.webp"
     ]
    },
    {
@@ -588,7 +587,7 @@ window.CATALOGO = [
     "hex": "#141414",
     "tallas": "M · L",
     "fotos": [
-     "img/prendas/tommy-hoodie-negro-2.webp"
+     "img/prendas/tommy-hoodie-negro-2-recorte.webp"
     ]
    },
    {
@@ -658,7 +657,7 @@ window.CATALOGO = [
     "hex": "#d0202a",
     "tallas": "XL · XXL",
     "fotos": [
-     "img/prendas/ck-logo-rojo-1.webp"
+     "img/prendas/ck-logo-rojo-1-recorte.webp"
     ]
    },
    {
@@ -666,7 +665,7 @@ window.CATALOGO = [
     "hex": "#1f3a8a",
     "tallas": "M · XL",
     "fotos": [
-     "img/prendas/ck-logo-azul-2.webp"
+     "img/prendas/ck-logo-azul-2-recorte.webp"
     ]
    },
    {
@@ -674,7 +673,7 @@ window.CATALOGO = [
     "hex": "#f4f2ee",
     "tallas": "XXL",
     "fotos": [
-     "img/prendas/ck-logo-blanco-3.webp"
+     "img/prendas/ck-logo-blanco-3-recorte.webp"
     ]
    }
   ],
@@ -736,7 +735,7 @@ window.CATALOGO = [
     "hex": "#d0202a",
     "tallas": "M · L · XXL",
     "fotos": [
-     "img/prendas/tommy-flag-rojo-3.webp"
+     "img/prendas/tommy-flag-rojo-3-recorte.webp"
     ]
    },
    {
@@ -744,7 +743,7 @@ window.CATALOGO = [
     "hex": "#1f3a8a",
     "tallas": "XL",
     "fotos": [
-     "img/prendas/tommy-flag-azul-2.webp"
+     "img/prendas/tommy-flag-azul-2-recorte.webp"
     ]
    },
    {
@@ -752,7 +751,7 @@ window.CATALOGO = [
     "hex": "#141414",
     "tallas": "M · L · XL · XXL",
     "fotos": [
-     "img/prendas/tommy-flag-negro-1.webp"
+     "img/prendas/tommy-flag-negro-1-recorte.webp"
     ]
    },
    {
@@ -760,7 +759,7 @@ window.CATALOGO = [
     "hex": "#f4f2ee",
     "tallas": "M · XXL",
     "fotos": [
-     "img/prendas/tommy-flag-blanco-4.webp"
+     "img/prendas/tommy-flag-blanco-4-recorte.webp"
     ]
    }
   ],
@@ -779,7 +778,7 @@ window.CATALOGO = [
     "hex": "#f4f2ee",
     "tallas": "S · XL",
     "fotos": [
-     "img/prendas/lacoste-smart-blanco-1.webp"
+     "img/prendas/lacoste-smart-blanco-1-recorte.webp"
     ]
    },
    {
@@ -787,7 +786,7 @@ window.CATALOGO = [
     "hex": "#1f3a8a",
     "tallas": "M · L · XL",
     "fotos": [
-     "img/prendas/lacoste-smart-azul-2.webp"
+     "img/prendas/lacoste-smart-azul-2-recorte.webp"
     ]
    }
   ],
@@ -1005,7 +1004,7 @@ window.CATALOGO = [
     "hex": "#6b6a3a",
     "tallas": "L · 3XL · 4XL",
     "fotos": [
-     "img/prendas/prada-luxe-verde-4.webp"
+     "img/prendas/prada-luxe-verde-4-recorte.webp"
     ]
    },
    {
@@ -1013,7 +1012,7 @@ window.CATALOGO = [
     "hex": "#2f4a2e",
     "tallas": "XL · 2XL · 3XL",
     "fotos": [
-     "img/prendas/prada-luxe-verde-oscuro-7.webp"
+     "img/prendas/prada-luxe-verde-oscuro-7-recorte.webp"
     ]
    },
    {
@@ -1021,7 +1020,7 @@ window.CATALOGO = [
     "hex": "#141414",
     "tallas": "L · XL · 2XL · 3XL · 4XL",
     "fotos": [
-     "img/prendas/prada-luxe-negro-6.webp"
+     "img/prendas/prada-luxe-negro-6-recorte.webp"
     ]
    },
    {
@@ -1029,7 +1028,7 @@ window.CATALOGO = [
     "hex": "#7a5532",
     "tallas": "L · XL · 2XL · 3XL · 4XL",
     "fotos": [
-     "img/prendas/prada-luxe-cafe-5.webp"
+     "img/prendas/prada-luxe-cafe-5-recorte.webp"
     ]
    },
    {
@@ -1037,7 +1036,7 @@ window.CATALOGO = [
     "hex": "#5b2a3e",
     "tallas": "L · XL · 2XL · 3XL",
     "fotos": [
-     "img/prendas/prada-luxe-morado-3.webp"
+     "img/prendas/prada-luxe-morado-3-recorte.webp"
     ]
    },
    {
@@ -1045,8 +1044,8 @@ window.CATALOGO = [
     "hex": "#f4f2ee",
     "tallas": "L · XL · 2XL · 3XL · 4XL",
     "fotos": [
-     "img/prendas/prada-luxe-blanco-1.webp",
-     "img/prendas/prada-luxe-blanco-2.webp"
+     "img/prendas/prada-luxe-blanco-1-recorte.webp",
+     "img/prendas/prada-luxe-blanco-2-recorte.webp"
     ]
    }
   ],
@@ -1116,7 +1115,7 @@ window.CATALOGO = [
     "hex": "#8c8d90",
     "tallas": "L · XL · XXL",
     "fotos": [
-     "img/prendas/lacoste-mc-gris-4.webp"
+     "img/prendas/lacoste-mc-gris-4-recorte.webp"
     ]
    },
    {
@@ -1124,7 +1123,7 @@ window.CATALOGO = [
     "hex": "#141414",
     "tallas": "M · L · XL · XXL",
     "fotos": [
-     "img/prendas/lacoste-mc-negro-1.webp"
+     "img/prendas/lacoste-mc-negro-1-recorte.webp"
     ]
    },
    {
@@ -1159,7 +1158,7 @@ window.CATALOGO = [
     "hex": "#141414",
     "tallas": "L · XXL",
     "fotos": [
-     "img/prendas/polo-core-negro-2.webp"
+     "img/prendas/polo-core-negro-2-recorte.webp"
     ]
    },
    {
@@ -1167,7 +1166,7 @@ window.CATALOGO = [
     "hex": "#1f3a8a",
     "tallas": "L · XL · XXL",
     "fotos": [
-     "img/prendas/polo-core-azul-3.webp"
+     "img/prendas/polo-core-azul-3-recorte.webp"
     ]
    }
   ],
@@ -1194,8 +1193,8 @@ window.CATALOGO = [
     "hex": "#1f3a8a",
     "tallas": "2XL · 3XL",
     "fotos": [
-     "img/prendas/polo-teddy-azul-2.webp",
-     "img/prendas/polo-teddy-azul-3.webp"
+     "img/prendas/polo-teddy-azul-2-recorte.webp",
+     "img/prendas/polo-teddy-azul-3-recorte.webp"
     ]
    }
   ],
