@@ -1,0 +1,25 @@
+VORÁGINE ROPA · VITRINA 3D
+==========================
+
+VER LA PÁGINA EN TU COMPUTADOR
+  Con doble clic en index.html se abre el catálogo en cuadrícula (sin 3D).
+  Para ver la vitrina 3D completa, publícala o ábrela desde un servidor local
+  (en esta carpeta: python -m http.server  y luego abre http://localhost:8000).
+
+CAMBIAR EL NOMBRE O EL WHATSAPP
+  Abre config.js con el Bloc de notas, cambia lo que está entre comillas y guarda.
+
+CAMBIAR TALLAS, COLORES O DESCRIPCIONES
+  Abre data/catalogo.js con el Bloc de notas. Cada prenda tiene sus colores y,
+  dentro de cada color, sus tallas separadas con "·" (ejemplo: "M · L · XL").
+
+QUÉ HAY EN LA CARPETA
+  index.html ........... la página
+  config.js ............ nombre de la tienda, WhatsApp y mensajes
+  data/catalogo.js ..... las 36 prendas con sus colores y tallas
+  css/, js/ ............ diseño y motor 3D (js/app.js se puede leer y editar)
+  img/prendas/ ......... fotos de cada prenda por color
+  herramientas/ ........ scripts que prepararon las fotos (uso técnico)
+
+PUBLICARLA EN ropa.voraginebyalttura.com
+  Ver README.md, sección "Publicar en el subdominio".

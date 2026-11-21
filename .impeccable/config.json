@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "css/estilos.css"
+        ],
+        "createdAt": "2026-11-20T23:51:27.448Z",
+        "reason": "user asked the site to match the existing Vorágine perfume site, whose product names use this same gold shimmer"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-21T00:01:54.406Z",
+        "reason": "user asked the site to match the existing Vorágine perfume site, which uses this gold shimmer and accent glow on its pedestal, buttons and names"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-21T00:01:54.414Z",
+        "reason": "user asked the site to match the existing Vorágine perfume site, which uses this gold shimmer and accent glow on its pedestal, buttons and names"
+      }
+    ]
+  }
+}

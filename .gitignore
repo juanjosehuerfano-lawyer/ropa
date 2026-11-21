@@ -1,0 +1,9 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+__pycache__/
+# Material interno
+herramientas/modelos/
+*.xlsx
+*.zip
